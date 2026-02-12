@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Anggie ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+    <main class="container">
+        
+        <section id="screen-welcome" class="card fade-in">
+            <h1 class="title">Hola, mi amor...</h1>
+            
+            <div class="welcome-flex">
+                <div class="photo-frame">
+                    <img src="nosotros.jpg" alt="Jahir y Anggie" onerror="this.src='https://media.giphy.com/media/26BRv0ThflsHCqDrG/giphy.gif'">
+                </div>
+<div class="letter-content">
+                    <h3 style="color: #d63384; font-family: 'Dancing Script', cursive; font-size: 2rem; margin-bottom: 10px;">
+                        Para mi Pinchechita hermosa...
+                    </h3>
+                    
+                    <p>
+                        Eres la mayor bendición y el regalo más bonito que Dios me ha dado. En ti veo a esa <strong>mujer virtuosa</strong> con la que anhelo caminar todos los años de mi vida.
+                    </p>
+                    
+                    <p>
+                        Sé que Dios tiene planes gigantes para nosotros. Mi sueño es seguir creciendo juntos espiritualmente, <strong>formar una familia</strong> y despertar cada día agradeciéndole a Él por tenerte.
+                    </p>
+                    
+                    <p>
+                        Soy el hombre más feliz del mundo a tu lado. Te amo con cada rincón de mi corazón.
+                    </p>
+                    
+                    <p style="text-align: right; font-style: italic; font-size: 0.85rem; margin-top: 10px; color: #888;">
+                        - Tu Jahirito 💕
+                    </p>
+                </div>
+            </div>
+
+            <button class="btn primary" onclick="goToQuestion()">Tengo una pregunta...</button>
+        </section>
+
+
+<section id="screen-question" class="card hidden center-content">
+            <h1 class="title">¿Quieres ser mi San Valentín?</h1>
+            
+            <div class="gif-container">
+                <img id="cat-image" src="gatito.gif" alt="Por favor" style="max-width: 250px; border-radius: 15px;">
+            </div>
+            
+            <div class="options">
+                <button id="btn-yes" class="btn yes">¡SÍ!</button>
+                <button id="btn-no" class="btn no">No</button>
+            </div>
+        </section>
+
+
+        <section id="screen-final" class="card hidden center-content">
+            
+            <h1 class="title" style="font-size: 2.5rem;">¡Sabía que dirías que SÍ! 💖</h1>
+            
+            <div class="reasons-header">
+                <span class="number-big">5</span>
+                <div class="reasons-text">
+                    <span class="text-upper">Razones</span>
+                    <span class="text-lower">por las que eres mi vida</span>
+                </div>
+            </div>
+
+            <ul class="reasons-list-elegant">
+                <li>
+                    <strong>1. Nuestra conexión única:</strong><br>
+                    Porque tenemos ese sentido del humor tan "raro" y especial que solo tú y yo entendemos. Esa complicidad de reírnos de todo me conecta a ti de una forma que jamás he sentido con nadie más.
+                </li>
+                <li>
+                    <strong>2. Un propósito Divino:</strong><br>
+                    Porque estamos juntos con Dios y Él guía nuestros pasos. Es gracias a Su voluntad que seguimos unidos superando las dificultades.
+                </li>
+                <li>
+                    <strong>3. Eres mi cura:</strong><br>
+                    Porque literalmente, al verte se me quita todo mal. Mis ojos brillan, el miedo desaparece y hasta la enfermedad se vuelve irrelevante... Tu presencia me sana el alma.
+                </li>
+                <li>
+                    <strong>4. Mi paz absoluta:</strong><br>
+                    Porque me das una paz mental que no encuentro en ningún otro lugar. Contigo mi cerebro descansa; haces que todo lo difícil parezca fácil solo con estar a mi lado.
+                </li>
+                <li>
+                    <strong>5. Mi proyecto de vida:</strong><br>
+                    Porque quiero vivir (y morir) contigo. Eres la mujer con la que sueño despertar cada día.
+                </li>
+            </ul>
+
+            <div class="final-letter">
+                <p>
+                    Gracias por permitirme caminar junto a ti. Lucho cada día por mis sueños y por conseguir esa <strong>estabilidad</strong> para nosotros.
+                </p>
+                <p>
+                    Mi mayor anhelo es <strong>vivir juntos y formar una familia</strong> bajo la bendición de Dios. Sé que no soy perfecto, pero me convertiré en tu ideal.
+                </p>
+                <p class="love-signature">
+                    ¡Te amo inmensamente!
+                </p>
+            </div>
+
+            <div class="final-invite">
+                <h2 style="color: #d63384; font-family: 'Dancing Script', cursive;">🍽️ ¡Nos vamos a comer rico!</h2>
+                <p style="margin: 10px 0;">Como ya eres mi Valentín oficial, te llevaré a un lugar especial.</p>
+                <span class="highlight-box">
+                    ✨ Arréglate y ponte hermosa por fis ✨
+                </span>
+            </div>
+
+            <div class="coupons-section">
+                <p>Tus regalos:</p>
+                <div class="coupons-container">
+                    <div class="coupon">🎟️ Cine + Besitos</div>
+                    <div class="coupon">🍝 Tu restaurante favorito</div>
+                    <div class="coupon">💆‍♂️ Masajes</div>
+                </div>
+            </div>
+            
+            <div class="footer-credit">
+                Hecho con amor y código por Jahir 👨‍💻❤️
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

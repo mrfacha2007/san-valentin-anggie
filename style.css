@@ -1,0 +1,133 @@
+/* RESET */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* FONDO Y CUERPO */
+body {
+    background: linear-gradient(135deg, #fff0f3 0%, #ffebee 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    color: #444;
+}
+
+/* TARJETA PRINCIPAL */
+.container { width: 100%; max-width: 650px; }
+.card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    border: 3px solid #fff;
+    text-align: center;
+    position: relative;
+    max-height: 90vh; /* Para que no sea infinito en cel */
+    overflow-y: auto; /* Scroll si es muy largo */
+}
+
+/* UTILIDADES */
+.hidden { display: none; }
+.fade-in { animation: fadeIn 0.8s ease-in; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+.center-content { text-align: center; }
+
+/* TIPOGRAFÍA */
+.title {
+    font-family: 'Dancing Script', cursive;
+    color: #d63384;
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+/* PANTALLA 1: FLEXBOX FOTO + TEXTO */
+.welcome-flex {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 25px;
+    text-align: left;
+}
+.photo-frame img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 15px;
+    border: 4px solid #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    transform: rotate(-2deg);
+}
+.letter-content {
+    background: #fff5f8;
+    padding: 15px;
+    border-radius: 12px;
+    border-left: 4px solid #d63384;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+.letter-content p { margin-bottom: 8px; }
+
+/* BOTONES */
+.btn {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    margin: 10px;
+    transition: transform 0.2s;
+}
+.btn:hover { transform: scale(1.05); }
+.primary { background: #d63384; color: white; box-shadow: 0 4px 10px rgba(214, 51, 132, 0.3); }
+.yes { background: #28a745; color: white; }
+.no { background: #dc3545; color: white; }
+
+/* PANTALLA 2: GIF */
+.gif-container img { max-width: 250px; border-radius: 10px; margin-bottom: 20px; }
+
+/* --- PANTALLA 3: DISEÑO FINAL --- */
+
+/* Encabezado "5 Razones" */
+.reasons-header {
+    display: flex; justify-content: center; align-items: center; gap: 10px; margin: 20px 0; color: #8b0000;
+}
+.number-big { font-size: 3.5rem; font-weight: 700; line-height: 1; border-right: 3px solid #8b0000; padding-right: 15px; }
+.reasons-text { display: flex; flex-direction: column; text-align: left; }
+.text-upper { font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
+.text-lower { font-family: 'Dancing Script', cursive; font-size: 1.3rem; }
+
+/* Lista Larga */
+.reasons-list-elegant {
+    list-style: none; text-align: left; padding: 0 10px; margin-bottom: 25px;
+}
+.reasons-list-elegant li {
+    padding: 12px 0; border-bottom: 1px dashed #ffcdd2; font-size: 0.9rem;
+}
+.reasons-list-elegant li strong { color: #d63384; font-size: 1rem; display: block; margin-bottom: 4px; }
+
+/* Carta Profunda */
+.final-letter {
+    background: #fff; border: 2px solid #ffebee; padding: 20px; border-radius: 15px;
+    text-align: justify; font-size: 0.95rem; margin-bottom: 25px; box-shadow: 0 5px 20px rgba(0,0,0,0.03);
+}
+.love-signature { text-align: center; margin-top: 15px; font-family: 'Dancing Script', cursive; font-size: 1.8rem; color: #d63384; }
+
+/* Invitación y Tickets */
+.final-invite { background: #fff0f3; padding: 15px; border-radius: 15px; border: 1px dashed #d63384; margin-bottom: 20px; }
+.highlight-box { background: #fff; padding: 8px 15px; border-radius: 20px; font-weight: bold; color: #d63384; display: inline-block; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+
+.coupons-section p { font-size: 0.85rem; color: #888; margin-bottom: 10px; }
+.coupons-container { display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; }
+.coupon { border: 1px dashed #d63384; padding: 8px 10px; border-radius: 8px; color: #d63384; font-weight: 700; font-size: 0.8rem; background: white; }
+
+.footer-credit { margin-top: 30px; font-size: 0.75rem; color: #aaa; border-top: 1px solid #eee; padding-top: 15px; }
+
+/* RESPONSIVE (CELULAR) */
+@media (max-width: 600px) {
+    .welcome-flex { flex-direction: column; text-align: center; }
+    .photo-frame img { margin: 0 auto; transform: rotate(0deg); }
+    .reasons-list-elegant { text-align: left; }
+}
